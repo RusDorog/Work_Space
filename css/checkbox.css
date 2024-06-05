@@ -1,0 +1,45 @@
+.checkbox {
+    position: relative;
+    display: block ;
+    line-height: 20px;
+    padding-left: 28px;
+}
+.checkbax__input {
+    appearance: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    /* transition: box-shadow 0.2s ease-in-out; */
+}
+
+.checkbax__input::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    display: block;
+    background: url('../img/uim_check.svg') no-repeat center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.checkbax__input:checked::after {
+    opacity: 1;
+}
+
+.checkbax__input:focus-visible {
+    outline: none;
+    box-shadow: 0px 2px 10px rgba(0, 0 , 0 , 0.15);
+}
+
+.checkbax__input:hover:not(:disabled) {
+    box-shadow: 0px 2px 10px rgba(166, 173 , 255 , 0.55);
+}
+
+.checkbax__input:disabled {
+    background-color: #ccc;
+}
