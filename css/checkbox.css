@@ -5,6 +5,8 @@
     padding-left: 28px;
 }
 .checkbax__input {
+    -wekit-apperarance: none;
+    -maz-appearance: none;
     appearance: none;
     position: absolute;
     width: 20px;
